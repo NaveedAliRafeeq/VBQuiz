@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CF2DD83-4842-4D87-9E8C-496842DEE537}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PMQuizV1.My.MyApplication</StartupObject>
+    <RootNamespace>PMQuizV1</RootNamespace>
+    <AssemblyName>PMQuizV1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PMQuizV1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PMQuizV1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Details.vb" />
+    <Compile Include="ucAdminMainMenu.Designer.vb">
+      <DependentUpon>ucAdminMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminMainMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEditQuestions.Designer.vb">
+      <DependentUpon>ucEditQuestions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucEditQuestions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLeaderBoards.Designer.vb">
+      <DependentUpon>ucLeaderBoards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucLeaderBoards.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMathsFeedback.Designer.vb">
+      <DependentUpon>ucMathsFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucMathsFeedback.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMathsQuiz.Designer.vb">
+      <DependentUpon>ucMathsQuiz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucMathsQuiz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAbout.Designer.vb">
+      <DependentUpon>ucAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAbout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="ucCreateAcc.Designer.vb">
+      <DependentUpon>ucCreateAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucCreateAcc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLogin.Designer.vb">
+      <DependentUpon>ucLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucLogin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMainMenu.Designer.vb">
+      <DependentUpon>ucMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucMainMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhysicsFeedback.Designer.vb">
+      <DependentUpon>ucPhysicsFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhysicsFeedback.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhysicsQuiz.Designer.vb">
+      <DependentUpon>ucPhysicsQuiz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhysicsQuiz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ucAdminMainMenu.resx">
+      <DependentUpon>ucAdminMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEditQuestions.resx">
+      <DependentUpon>ucEditQuestions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLeaderBoards.resx">
+      <DependentUpon>ucLeaderBoards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMathsFeedback.resx">
+      <DependentUpon>ucMathsFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMathsQuiz.resx">
+      <DependentUpon>ucMathsQuiz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAbout.resx">
+      <DependentUpon>ucAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCreateAcc.resx">
+      <DependentUpon>ucCreateAcc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLogin.resx">
+      <DependentUpon>ucLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMainMenu.resx">
+      <DependentUpon>ucMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhysicsFeedback.resx">
+      <DependentUpon>ucPhysicsFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhysicsQuiz.resx">
+      <DependentUpon>ucPhysicsQuiz.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\868143-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PictureBtn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgBlur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgBlurSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MathsBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space_bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedBG1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedBG2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
